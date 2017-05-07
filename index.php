@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 <head>
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
@@ -11,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	
+<?php	include "header.php" ?>
 
 </body>
 </html>
