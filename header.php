@@ -103,6 +103,21 @@
           <div class="pure-u-1 pure-u-md-1-3">
               <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
                   <ul class="pure-menu-list">
+              <?php 
+
+              if (AmILoggedIn()) {
+
+                echo "<li class=\"pure-menu-item\"><a href=\"../family/adminpage.php\" class=\"pure-menu-link\">Admin Home</a></li>";
+
+                echo "<li class=\"pure-menu-item\"><a href=\"../family/logout.php\" class=\"pure-menu-link\">Logout</a></li>";
+
+              } else {
+
+                echo "<li class=\"pure-menu-item\"><a href=\"../family/login.php\" class=\"pure-menu-link\">Log In</a></li>";
+
+              }
+
+              ?>
                       <li class="pure-menu-item"><a href="#" class="pure-menu-link">Family Search</a></li>
                       <li class="pure-menu-item"><a href="#" class="pure-menu-link">Wiki Tree</a></li>
                   </ul>
